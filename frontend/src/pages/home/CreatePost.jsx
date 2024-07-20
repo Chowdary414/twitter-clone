@@ -48,7 +48,6 @@ const CreatePost = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		alert("Post created successfully");
 		createPost({ text, img });
 	};
 
