@@ -27,7 +27,7 @@ const SignUpPage = () => {
 					},
 					body: JSON.stringify({email,username,fullName,password})
 				})
-
+				
 				const data = await res.json();
 				if(!res.ok) throw new Error(data.error || "Failed to create account");
 				
